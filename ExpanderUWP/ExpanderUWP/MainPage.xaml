@@ -28,7 +28,7 @@
         <StackPanel Margin="20" Grid.Row="1">
             <xp:Expander x:Name="Expander1" VerticalAlignment="Top" Margin="0,0,0,10" IsExpanded="False">
                 <xp:Expander.HeaderButtonContent>
-                    <TextBlock Text="This is the header - expander 1" VerticalAlignment="Center" Style="{StaticResource SubtitleTextBlockStyle}" />
+                    <TextBlock Text="Expander 1" VerticalAlignment="Center" Style="{StaticResource SubtitleTextBlockStyle}" />
                 </xp:Expander.HeaderButtonContent>
                 <Grid Height="250" Background="#FFF5F1D9">
                     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This is the content" VerticalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
