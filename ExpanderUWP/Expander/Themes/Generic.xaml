@@ -24,47 +24,31 @@
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal">
                                     <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="&#xE011;" />
+                                        </ObjectAnimationUsingKeyFrames>
                                         <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="0.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="PointerOver">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
-                                            <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
-                                        </ObjectAnimationUsingKeyFrames>
-
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
                                                                        Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlHighlightBaseHighBrush}" />
+                                                                    Value="{ThemeResource SystemControlHighlightBaseMediumBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
                                         <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="0.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
-                                            <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
-                                        </ObjectAnimationUsingKeyFrames>
-
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
                                                                        Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlHighlightBaseHighBrush}" />
+                                                                    Value="{ThemeResource SystemControlHighlightBaseMediumBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="0.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                         <PointerDownThemeAnimation Storyboard.TargetName="RootGrid" />
                                     </Storyboard>
                                 </VisualState>
@@ -80,39 +64,45 @@
                                             <DiscreteObjectKeyFrame KeyTime="0"
                                                                     Value="{ThemeResource SystemControlDisabledBaseLowBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
-
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="0.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Checked">
                                     <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="&#xE010;" />
+                                        </ObjectAnimationUsingKeyFrames>
                                         <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="180.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="CheckedPointerOver">
                                     <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="{ThemeResource SystemControlHighlightBaseMediumBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="&#xE010;" />
+                                        </ObjectAnimationUsingKeyFrames>
                                         <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="180.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="CheckedPressed">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
+                                                                       Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlHighlightBaseMediumLowBrush}" />
+                                                                    Value="{ThemeResource SystemControlHighlightBaseMediumBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
-
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="180.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="&#xE010;" />
+                                        </ObjectAnimationUsingKeyFrames>
                                         <PointerDownThemeAnimation Storyboard.TargetName="RootGrid" />
                                     </Storyboard>
                                 </VisualState>
@@ -128,10 +118,11 @@
                                             <DiscreteObjectKeyFrame KeyTime="0"
                                                                     Value="{ThemeResource SystemControlDisabledBaseLowBrush}" />
                                         </ObjectAnimationUsingKeyFrames>
-
-                                        <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.1" To="90.0"
-                                                         Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
-                                                         Storyboard.TargetName="ContentPresenter" />
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Content"
+                                                                       Storyboard.TargetName="ContentPresenter">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                    Value="&#xE010;" />
+                                        </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Indeterminate">
@@ -141,12 +132,6 @@
                                 </VisualState>
                                 <VisualState x:Name="IndeterminatePointerOver">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
-                                            <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
-                                        </ObjectAnimationUsingKeyFrames>
-
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
                                                                        Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
@@ -157,12 +142,6 @@
                                 </VisualState>
                                 <VisualState x:Name="IndeterminatePressed">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
-                                            <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlBackgroundBaseMediumLowBrush}" />
-                                        </ObjectAnimationUsingKeyFrames>
-
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
                                                                        Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
@@ -173,11 +152,6 @@
                                 </VisualState>
                                 <VisualState x:Name="IndeterminateDisabled">
                                     <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background"
-                                                                       Storyboard.TargetName="RootGrid">
-                                            <DiscreteObjectKeyFrame KeyTime="0"
-                                                                    Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
-                                        </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground"
                                                                        Storyboard.TargetName="ContentPresenter">
                                             <DiscreteObjectKeyFrame KeyTime="0"
@@ -288,16 +262,15 @@
                                 <ColumnDefinition />
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <ToggleButton x:Name="PART_ExpanderToggleButton" Height="40"
-                                          Style="{TemplateBinding ExpanderToggleButtonStyle}" VerticalAlignment="Top"
-                                          Width="40" Grid.Column="1">
-                                <TextBlock Text="&#xE011;" FontFamily="Segoe MDL2 Assets" />
-                            </ToggleButton>
                             <Button x:Name="PART_HeaderButton" VerticalAlignment="Stretch"
-                                    d:LayoutOverrides="Height" Style="{TemplateBinding HeaderButtonStyle}"
-                                    HorizontalAlignment="Stretch">
+                            	d:LayoutOverrides="Height" Style="{TemplateBinding HeaderButtonStyle}"
+                            	HorizontalAlignment="Stretch">
                                 <ContentPresenter Content="{TemplateBinding HeaderButtonContent}" Margin="5,0,0,0" />
                             </Button>
+                            <ToggleButton x:Name="PART_ExpanderToggleButton" Height="40"
+                            	Style="{TemplateBinding ExpanderToggleButtonStyle}" VerticalAlignment="Top"
+                            	Width="40" Grid.Column="1" FontFamily="Segoe MDL2 Assets" Content="&#xE011;">
+                            </ToggleButton>
                             <ContentPresenter Content="{TemplateBinding Content}" Grid.ColumnSpan="3" Grid.Row="1" />
                         </Grid>
                     </Grid>
