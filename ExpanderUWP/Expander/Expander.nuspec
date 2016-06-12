@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/route2Dev/ExpanderUWP/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/route2Dev/ExpanderUWP</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Nuget release of UWP Expander Control.</releaseNotes>
+    <copyright>Copyright ©  2016 Route 2 Solutions, Inc.</copyright>
+    <tags>UWP Controls Expander</tags>
+  </metadata>
+</package>

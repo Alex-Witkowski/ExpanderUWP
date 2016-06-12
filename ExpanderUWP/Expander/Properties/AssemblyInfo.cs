@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Expander")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("UWP Expander Control based on Dean Chalk's ExpanderUWP control.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Expander")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Route 2 Solutions, Inc.")]
+[assembly: AssemblyProduct("Expander UWP Control")]
+[assembly: AssemblyCopyright("Copyright ©  2016 Route 2 Solutions, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
